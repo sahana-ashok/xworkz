@@ -9,7 +9,7 @@ public class PersonRun {
         person.talk();
         person.sleep();
         System.out.println("----------------");
-        Person person1=new Professor();
+        Person person1=new Proffesor();
         person1.wake();
         person1.walk();
         person1.eat();
