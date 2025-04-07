@@ -2,10 +2,11 @@ package com.xworkz.prog.inheritance.runner;
 
 import com.xworkz.inheritence.internal.swim.Swim;
 import com.xworkz.inheritence.internal.swim.FreestyleSwim;
+import com.xworkz.prog.inheritance.internal.swimming.Swimming;
 
-public class SwimRunner {
+public class SwimmingRunner {
     public static void main(String[] args) {
-        Swim swim = new Swim();
+        Swimming swim = new Swimming();
         swim.health();
         swim.water();
         swim.exercise();
@@ -14,7 +15,7 @@ public class SwimRunner {
 
         System.out.println("-----------");
 
-        Swim swim2 = new FreestyleSwim();
+        Swimming swim2 = new FreestyleSwim();
         swim2.health();
         swim2.water();
         swim2.exercise();

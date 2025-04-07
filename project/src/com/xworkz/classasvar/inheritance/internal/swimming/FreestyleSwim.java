@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.swim;
+package com.xworkz.prog.inheritance.internal.swimming;
 
-public class FreestyleSwim extends Swim {
+public class FreestyleSwim extends Swimming {
     public FreestyleSwim() {
         super();
         System.out.println("FreestyleSwim --child");

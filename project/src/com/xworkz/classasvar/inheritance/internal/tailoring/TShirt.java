@@ -1,4 +1,4 @@
-package com.xworkz.prog.inheritance.internal.clothing;
+package com.xworkz.prog.inheritance.internal.tailoring;
 
 public class TShirt extends Clothing {
     public TShirt() {

@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.kurta;
+package com.xworkz.prog.inheritance.internal.Kadikurta;
 
-public class SilkKurta extends Kurta {
+public class SilkKurta extends KadiKurta {
     public SilkKurta() {
         super();
         System.out.println("SilkKurta --child");

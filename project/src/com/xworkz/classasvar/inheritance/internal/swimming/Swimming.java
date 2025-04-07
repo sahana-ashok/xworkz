@@ -1,8 +1,8 @@
-package com.xworkz.prog.inheritance.internal.swim;
+package com.xworkz.prog.inheritance.internal.swimming;
 
-public class Swim {
-    public Swim() {
-        System.out.println("Swim --parent");
+public class Swimming {
+    public Swimming() {
+        System.out.println("Swimming --parent");
     }
 
     public void health() {

@@ -2,10 +2,11 @@ package com.xworkz.prog.inheritance.runner;
 
 import com.xworkz.inheritence.internal.chips.Chips;
 import com.xworkz.inheritence.internal.chips.SpicyChips;
+import com.xworkz.prog.inheritance.internal.potatochips.PotatoChips;
 
-public class ChipsRunner {
+public class PotatoChipsRunner {
     public static void main(String[] args) {
-        Chips chips1 = new Chips();
+        PotatoChips chips1 = new PotatoChips();
         chips1.made();
         chips1.crispy();
         chips1.flavors();
@@ -13,7 +14,7 @@ public class ChipsRunner {
         chips1.snack();
 
         System.out.println("-----------------");
-        Chips chips = new SpicyChips();
+        PotatoChips chips = new SpicyChips();
         chips.made();
         chips.crispy();
         chips.flavors();

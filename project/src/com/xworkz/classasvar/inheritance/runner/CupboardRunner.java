@@ -2,18 +2,19 @@ package com.xworkz.prog.inheritance.runner;
 
 import com.xworkz.inheritence.internal.caboard.Caboard;
 import com.xworkz.inheritence.internal.caboard.Door;
+import com.xworkz.prog.inheritance.internal.cupboard.Cupboard;
 
-public class CaboardRunner {
+public class CupboardRunner {
     public static void main(String[] args) {
-        Caboard caboard1 = new Caboard();
-        caboard1.lock();
-        caboard1.key();
-        caboard1.handle();
-        caboard1.open();
-        caboard1.close();
+        Cupboard Cupboard1 = new Cupboard();
+        Cupboard1.lock();
+        Cupboard1.key();
+        Cupboard1.handle();
+        Cupboard1.open();
+        Cupboard1.close();
 
         System.out.println("-------------------");
-        Caboard caboard = new Door();
+        Cupboard caboard = new Door();
         caboard.lock();
         caboard.key();
         caboard.handle();

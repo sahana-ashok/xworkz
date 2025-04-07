@@ -2,10 +2,11 @@ package com.xworkz.prog.inheritance.runner;
 
 import com.xworkz.inheritence.internal.kurta.Kurta;
 import com.xworkz.inheritence.internal.kurta.SilkKurta;
+import com.xworkz.prog.inheritance.internal.Kadikurta.KadiKurta;
 
-public class KurtaRunner {
+public class KadiKurtaRunner {
     public static void main(String[] args) {
-        Kurta kurta = new Kurta();
+        KadiKurta kurta = new KadiKurta();
         kurta.traditional();
         kurta.comfort();
         kurta.festivalWear();
@@ -14,7 +15,7 @@ public class KurtaRunner {
 
         System.out.println("-----------");
 
-        Kurta kurta2 = new SilkKurta();
+        KadiKurta kurta2 = new SilkKurta();
         kurta2.traditional();
         kurta2.comfort();
         kurta2.festivalWear();

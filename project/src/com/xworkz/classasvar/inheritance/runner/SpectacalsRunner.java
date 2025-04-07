@@ -2,10 +2,11 @@ package com.xworkz.prog.inheritance.runner;
 
 import com.xworkz.inheritence.internal.spects.Spects;
 import com.xworkz.inheritence.internal.spects.Sunglasses;
+import com.xworkz.prog.inheritance.internal.spectacals.Spectacals;
 
-public class SpectsRunner {
+public class SpectacalsRunner {
     public static void main(String[] args) {
-        Spects spects = new Spects();
+        Spectacals spects = new Spectacals();
         spects.vision();
         spects.lenses();
         spects.frame();
@@ -14,7 +15,7 @@ public class SpectsRunner {
 
         System.out.println("-----------");
 
-        Spects spects2 = new Sunglasses();
+        Spectacals spects2 = new Sunglasses();
         spects2.vision();
         spects2.lenses();
         spects2.frame();

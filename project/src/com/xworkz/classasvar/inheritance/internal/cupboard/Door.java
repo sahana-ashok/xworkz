@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.caboard;
+package com.xworkz.prog.inheritance.internal.cupboard;
 
-public class Door extends Caboard {
+public class Door extends Cupboard {
     public Door() {
         super();
         System.out.println("Running non-arg constructor Door");

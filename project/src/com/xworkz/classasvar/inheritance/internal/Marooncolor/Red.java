@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.color;
+package com.xworkz.prog.inheritance.internal.Marooncolor;
 
-public class Red extends Color {
+public class Red extends MaroonColor {
     public Red() {
         super();
         System.out.println("Running non-arg constructor Red--child");

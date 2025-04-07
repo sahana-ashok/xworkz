@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.spects;
+package com.xworkz.prog.inheritance.internal.spectacals;
 
-public class Sunglasses extends Spects {
+public class Sunglasses extends Spectacals {
     public Sunglasses() {
         super();
         System.out.println("Sunglasses --child");

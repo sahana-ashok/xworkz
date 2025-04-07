@@ -1,6 +1,6 @@
-package com.xworkz.prog.inheritance.internal.bird;
+package com.xworkz.prog.inheritance.internal.angrybird;
 
-public class Eagle extends Bird {
+public class Eagle extends AngryBird {
     public Eagle() {
         super();
         System.out.println("Running non-arg constructor Eagle");
