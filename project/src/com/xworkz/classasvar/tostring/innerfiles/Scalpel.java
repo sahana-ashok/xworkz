@@ -19,4 +19,20 @@ public class Scalpel {
     public int hashCode(){
         return 98751;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Scalpel) {
+                System.out.println("Ref is scalpe,it will compare....");
+                Scalpel scalpel = this;
+                Scalpel scalpel1 = (Scalpel) obj;
+                if (scalpel.weight== scalpel1.weight && scalpel.color.equals(scalpel1.color) && scalpel.speed== scalpel1.speed) {
+                    System.out.println("Both scalpe are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

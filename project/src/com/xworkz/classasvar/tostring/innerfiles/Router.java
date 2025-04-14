@@ -19,4 +19,20 @@ public class Router {
     public int hashCode(){
         return 8933;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Router) {
+                System.out.println("Ref is router,it will compare....");
+                Router router = this;
+                Router router1 = (Router) obj;
+                if (router.power.equals(router1.power) && router.intensity== router1.intensity && router.duration== router1.duration) {
+                    System.out.println("Both router are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

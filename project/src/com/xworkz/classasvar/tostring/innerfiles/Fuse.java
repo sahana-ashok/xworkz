@@ -19,4 +19,20 @@ public class Fuse {
     public int hashCode(){
         return 267;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Fuse) {
+                System.out.println("Ref is fuse,it will compare....");
+                Fuse fuse = this;
+                Fuse fuse1 = (Fuse) obj;
+                if (fuse.color.equals(fuse1.color) && fuse.thickness== fuse1.thickness) {
+                    System.out.println("Both fuse are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

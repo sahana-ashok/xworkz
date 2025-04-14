@@ -20,4 +20,20 @@ public class Sensor {
     public int hashCode(){
         return 90165;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Sensor) {
+                System.out.println("Ref is sensor,it will compare....");
+                Sensor sensor = this;
+                Sensor sensor1 = (Sensor) obj;
+                if (sensor.power== sensor1.power && sensor.weight.equals(sensor1.weight) && sensor.color== sensor1.color) {
+                    System.out.println("Both sensor are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

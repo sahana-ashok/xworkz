@@ -19,4 +19,20 @@ public class Vacuum {
     public int hashCode(){
         return 8967;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Vacuum) {
+                System.out.println("Ref is vacuum,it will compare....");
+                Vacuum vacuum = this;
+                Vacuum vacuum1 = (Vacuum) obj;
+                if (vacuum.width== vacuum1.width && vacuum.duration.equals(vacuum1.duration) && vacuum.capacity== vacuum1.capacity) {
+                    System.out.println("Both vacuum are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,20 @@ public class Raincoat {
     public int hashCode(){
         return 102;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Raincoat) {
+                System.out.println("Ref is raincoat,it will compare....");
+                Raincoat raincoat = this;
+                Raincoat raincoat1 = (Raincoat) obj;
+                if (raincoat.speed.equals(raincoat1.speed) && raincoat.size== raincoat1.size && raincoat.flexibility== raincoat1.flexibility) {
+                    System.out.println("Both raincoat are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

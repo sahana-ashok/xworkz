@@ -19,4 +19,20 @@ public class Highlighter {
     public int hashCode(){
         return 3026;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Highlighter) {
+                System.out.println("Ref is highlighter,it will compare....");
+                Highlighter highlighter = this;
+                Highlighter highlighter1 = (Highlighter) obj;
+                if (highlighter.color.equals(highlighter1.color) && highlighter.width== highlighter1.width) {
+                    System.out.println("Both highlighter are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

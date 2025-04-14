@@ -19,4 +19,20 @@ public class Transmitter {
     public int hashCode(){
         return 63667;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Transmitter) {
+                System.out.println("Ref is transmitter,it will compare....");
+                Transmitter transmitter = this;
+                Transmitter transmitter1 = (Transmitter) obj;
+                if (transmitter.volume== transmitter1.volume && transmitter.texture.equals(transmitter1.texture) && transmitter.color== transmitter1.color) {
+                    System.out.println("Both transmitter are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,20 @@ public class Pliers {
     public int hashCode(){
         return 802;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Pliers) {
+                System.out.println("Ref is pliers,it will compare....");
+                Pliers pliers = this;
+                Pliers pliers1 = (Pliers) obj;
+                if (pliers.flexibility.equals(pliers1.flexibility) && pliers.power== pliers1.power) {
+                    System.out.println("Both pliers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

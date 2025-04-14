@@ -20,4 +20,20 @@ public class RollingPin {
     public int hashCode(){
         return 459;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof RollingPin) {
+                System.out.println("Ref is rollingpin,it will compare....");
+                RollingPin rollingpin = this;
+                RollingPin rollingpin1 = (RollingPin) obj;
+                if (rollingpin.speed.equals(rollingpin1.speed) && rollingpin.size== rollingpin1.size && rollingpin.power== rollingpin1.power) {
+                    System.out.println("Both rollingpin are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

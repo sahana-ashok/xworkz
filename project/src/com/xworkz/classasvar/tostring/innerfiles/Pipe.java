@@ -19,4 +19,20 @@ public class Pipe {
     public int hashCode(){
         return 2003;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Pipe) {
+                System.out.println("Ref is pipe,it will compare....");
+                Pipe pipe = this;
+                Pipe pipe1 = (Pipe) obj;
+                if (pipe.power.equals(pipe1.power) && pipe.range== pipe1.range) {
+                    System.out.println("Both pipe are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

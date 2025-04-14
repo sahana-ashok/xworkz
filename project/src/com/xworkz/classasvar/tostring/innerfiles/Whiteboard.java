@@ -19,4 +19,20 @@ public class Whiteboard {
     public int hashCode(){
         return 67;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Whiteboard) {
+                System.out.println("Ref is whiteboard,it will compare....");
+                Whiteboard whiteboard = this;
+                Whiteboard whiteboard1 = (Whiteboard) obj;
+                if (whiteboard.thickness.equals(whiteboard1.thickness) && whiteboard.size== whiteboard1.size && whiteboard.shape== whiteboard1.shape) {
+                    System.out.println("Both whiteboard are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

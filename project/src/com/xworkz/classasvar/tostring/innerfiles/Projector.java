@@ -19,4 +19,20 @@ public class Projector {
     public int hashCode(){
         return 102;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Projector) {
+                System.out.println("Ref is projector,it will compare....");
+                Projector projector = this;
+                Projector projector1 = (Projector) obj;
+                if (projector.density.equals(projector1.density) && projector.thickness==projector1.thickness && projector.range==projector1.range) {
+                    System.out.println("Both project are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

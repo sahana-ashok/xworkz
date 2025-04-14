@@ -19,4 +19,20 @@ public class Folder {
     public int hashCode(){
         return 3021;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Folder) {
+                System.out.println("Ref is folder,it will compare....");
+                Folder folder = this;
+                Folder folder1 = (Folder) obj;
+                if (folder.volume.equals(folder1.volume) && folder.weight== folder1.weight) {
+                    System.out.println("Both folder are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

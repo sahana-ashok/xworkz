@@ -19,4 +19,20 @@ public class Palette {
     public int hashCode(){
         return 410;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Palette) {
+                System.out.println("Ref is palette,it will compare....");
+                Palette palette = this;
+                Palette palette1 = (Palette) obj;
+                if (palette.width.equals(palette1.width) && palette.speed== palette1.speed) {
+                    System.out.println("Both palette are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,20 @@ public class Sprinkler {
     public int hashCode(){
         return 15202;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Sprinkler) {
+                System.out.println("Ref is sprinkler,it will compare....");
+                Sprinkler sprinkler = this;
+                Sprinkler sprinkler1 = (Sprinkler) obj;
+                if (sprinkler.intensity==sprinkler1.intensity && sprinkler.color.equals(sprinkler1.color) && sprinkler.shape== sprinkler1.shape) {
+                    System.out.println("Both sprinkler are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

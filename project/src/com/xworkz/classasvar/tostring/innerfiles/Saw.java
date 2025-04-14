@@ -20,4 +20,20 @@ public class Saw {
     public int hashCode(){
         return 638;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Saw) {
+                System.out.println("Ref is saw,it will compare....");
+                Saw saw = this;
+                Saw saw1 = (Saw) obj;
+                if (saw.range.equals(saw1.range) && saw.size== saw1.size && saw.distance== saw1.distance) {
+                    System.out.println("Both saw are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

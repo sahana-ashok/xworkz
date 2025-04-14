@@ -19,4 +19,20 @@ public class Piano {
     public int hashCode(){
         return 7801;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Piano) {
+                System.out.println("Ref is piano,it will compare....");
+                Piano piano = this;
+                Piano piano1 = (Piano) obj;
+                if (piano.capacity.equals(piano1.capacity) && piano.duration== piano1.duration) {
+                    System.out.println("Both piano are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

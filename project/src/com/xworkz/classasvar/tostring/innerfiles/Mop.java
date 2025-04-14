@@ -19,4 +19,20 @@ public class Mop {
     public int hashCode(){
         return 01;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Mop) {
+                System.out.println("Ref is mop,it will compare....");
+                Mop mop = this;
+                Mop mop1 = (Mop) obj;
+                if (mop.thickness.equals(mop1.thickness) && mop.volume== mop1.volume) {
+                    System.out.println("Both mop are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

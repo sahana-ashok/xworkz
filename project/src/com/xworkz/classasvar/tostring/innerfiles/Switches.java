@@ -1,33 +1,33 @@
 package com.xworkz.prog.tostring.innerfiles;
 
-public class Envelope {
-    private int speed;
-    private String intensity;
+public class Switches {
+    private int color;
+    private String volume;
     private double thickness;
 
-    public Envelope(int speed, String intensity, double thickness) {
-        this.speed = speed;
-        this.intensity = intensity;
+    public Switches(int color, String volume, double thickness) {
+        this.color = color;
+        this.volume = volume;
         this.thickness = thickness;
     }
 
     @Override
     public String toString() {
-        return "Envelope [speed=" + speed + ", intensity=" + intensity + ", thickness=" + thickness + "]";
+        return "Switch [color=" + color + ", volume=" + volume + ", thickness=" + thickness + "]";
     }
     @Override
     public int hashCode(){
-        return 801023;
+        return 7567;
     }
     @Override
     public boolean equals(Object obj) {
         if (obj != null) {
             System.out.println("Refer is not null");
-            if (obj instanceof Envelope) {
+            if (obj instanceof Switches) {
                 System.out.println("Ref is envelope,it will compare....");
-                Envelope envelope = this;
-                Envelope envelope1 = (Envelope) obj;
-                if ( envelope.intensity.equals(envelope1.intensity) && envelope.speed==envelope1.speed) {
+                Switches switches = this;
+                Switches switches1 = (Switches) obj;
+                if ( switches.volume.equals(switches1.volume) && switches.color== switches1.color) {
                     System.out.println("Both envelope are same");
                     return true;
                 }

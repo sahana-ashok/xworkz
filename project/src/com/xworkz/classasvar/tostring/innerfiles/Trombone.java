@@ -19,4 +19,20 @@ public class Trombone {
     public int hashCode(){
         return 3367;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Trombone) {
+                System.out.println("Ref is trombone,it will compare....");
+                Trombone trombone = this;
+                Trombone trombone1 = (Trombone) obj;
+                if (trombone.width== trombone1.width && trombone.material.equals(trombone1.material) && trombone.color== trombone1.color) {
+                    System.out.println("Both trombone are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

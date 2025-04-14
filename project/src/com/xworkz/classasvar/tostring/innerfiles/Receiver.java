@@ -19,4 +19,20 @@ public class Receiver {
     public int hashCode(){
         return 3021;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Receiver) {
+                System.out.println("Ref is receiver,it will compare....");
+                Receiver receiver = this;
+                Receiver receiver1 = (Receiver) obj;
+                if (receiver.height.equals(receiver1.height) && receiver.power== receiver1.power && receiver.weight== receiver1.weight) {
+                    System.out.println("Both receiver are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,20 @@ public class Outlet {
     public int hashCode(){
         return 1010;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Outlet) {
+                System.out.println("Ref is outlet,it will compare....");
+                Outlet outlet = this;
+                Outlet outlet1 = (Outlet) obj;
+                if (outlet.speed.equals(outlet1.speed) && outlet.volume== outlet1.volume) {
+                    System.out.println("Both outlet are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

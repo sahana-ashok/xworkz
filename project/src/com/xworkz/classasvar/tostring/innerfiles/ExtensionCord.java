@@ -19,4 +19,21 @@ public class ExtensionCord {
     public int hashCode(){
         return 90020;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof ExtensionCord) {
+                System.out.println("Ref is extensioncord,it will compare....");
+                ExtensionCord extensioncord = this;
+                ExtensionCord extensioncord1 = (ExtensionCord) obj;
+                if (extensioncord.thickness.equals(extensioncord1.thickness) && extensioncord.density== extensioncord1.density) {
+                    System.out.println("Both extensioncord are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

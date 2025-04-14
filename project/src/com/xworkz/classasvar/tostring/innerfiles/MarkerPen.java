@@ -19,4 +19,20 @@ public class MarkerPen {
     public int hashCode(){
         return 40;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof MarkerPen) {
+                System.out.println("Ref is markerpen,it will compare....");
+                MarkerPen markerpen = this;
+                MarkerPen markerpen1 = (MarkerPen) obj;
+                if (markerpen.brightness.equals(markerpen1.brightness) && markerpen.color== markerpen1.color) {
+                    System.out.println("Both markerpen are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

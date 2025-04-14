@@ -19,4 +19,20 @@ public class Label {
     public int hashCode(){
         return 410;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Label) {
+                System.out.println("Ref is label,it will compare....");
+                Label label = this;
+                Label label1 = (Label) obj;
+                if (label.speed.equals(label1.speed) && label.power== label1.power) {
+                    System.out.println("Both label are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

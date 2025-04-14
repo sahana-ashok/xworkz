@@ -19,4 +19,20 @@ public class Spatula {
     public int hashCode(){
         return 9875;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Spatula) {
+                System.out.println("Ref is spatula,it will compare....");
+                Spatula spatula = this;
+                Spatula spatula1 = (Spatula) obj;
+                if (spatula.speed== spatula1.speed && spatula.size.equals(spatula1.size) && spatula.speed== spatula1.speed) {
+                    System.out.println("Both spatula are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

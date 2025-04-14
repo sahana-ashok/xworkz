@@ -19,4 +19,20 @@ public class Thermometer {
     public int hashCode(){
         return 368;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Thermometer) {
+                System.out.println("Ref is thermometer,it will compare....");
+                Thermometer thermometer = this;
+                Thermometer thermometer1 = (Thermometer) obj;
+                if (thermometer.power== thermometer1.power && thermometer.texture.equals(thermometer1.texture) && thermometer.height== thermometer1.height) {
+                    System.out.println("Both thermometer are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

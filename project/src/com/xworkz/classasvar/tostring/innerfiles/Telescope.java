@@ -19,4 +19,20 @@ public class Telescope {
     public int hashCode(){
         return 7785;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Telescope) {
+                System.out.println("Ref is telescope,it will compare....");
+                Telescope telescope = this;
+                Telescope telescope1 = (Telescope) obj;
+                if (telescope.width== telescope1.width && telescope.material.equals(telescope1.material) && telescope.intensity== telescope1.intensity) {
+                    System.out.println("Both telescope are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

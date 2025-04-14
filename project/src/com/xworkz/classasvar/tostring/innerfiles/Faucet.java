@@ -19,4 +19,20 @@ public class Faucet {
     public int hashCode(){
         return 801023;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Faucet) {
+                System.out.println("Ref is faucet,it will compare....");
+                Faucet faucet = this;
+                Faucet faucet1 = (Faucet) obj;
+                if (faucet.texture.equals(faucet1.texture) && faucet.range== faucet1.range) {
+                    System.out.println("Both faucet are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

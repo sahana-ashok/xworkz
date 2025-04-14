@@ -19,4 +19,20 @@ public class Modem {
     public int hashCode(){
         return 101;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Modem) {
+                System.out.println("Ref is modem,it will compare....");
+                Modem modem = this;
+                Modem modem1 = (Modem) obj;
+                if (modem.size.equals(modem1.size) && modem.power==modem1.power) {
+                    System.out.println("Both modem are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

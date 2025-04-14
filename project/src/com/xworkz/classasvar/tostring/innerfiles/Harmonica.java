@@ -19,4 +19,20 @@ public class Harmonica {
     public int hashCode(){
         return 60;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Harmonica) {
+                System.out.println("Ref is harmonica,it will compare....");
+                Harmonica harmonica = this;
+                Harmonica harmonica1 = (Harmonica) obj;
+                if (harmonica.capacity.equals(harmonica1.capacity) && harmonica.texture== harmonica1.texture) {
+                    System.out.println("Both harmonica are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,20 @@ public class Guitar {
     public int hashCode(){
         return 7398;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Guitar) {
+                System.out.println("Ref is guiter,it will compare....");
+                Guitar guitar = this;
+                Guitar guitar1 = (Guitar) obj;
+                if (guitar.density.equals(guitar1.density) && guitar.brightness== guitar1.brightness) {
+                    System.out.println("Both guiter are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

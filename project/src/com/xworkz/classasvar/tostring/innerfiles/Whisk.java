@@ -19,4 +19,20 @@ public class Whisk {
     public int hashCode(){
         return 6887;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Whisk) {
+                System.out.println("Ref is whisk,it will compare....");
+                Whisk whisk = this;
+                Whisk whisk1 = (Whisk) obj;
+                if (whisk.power.equals(whisk1.power) && whisk.intensity== whisk1.intensity && whisk.duration== whisk1.duration) {
+                    System.out.println("Both whisk are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

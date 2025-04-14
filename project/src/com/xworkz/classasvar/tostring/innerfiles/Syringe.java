@@ -19,4 +19,20 @@ public class Syringe {
     public int hashCode(){
         return 6567;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Syringe) {
+                System.out.println("Ref is syringe,it will compare....");
+                Syringe syringe = this;
+                Syringe syringe1 = (Syringe) obj;
+                if (syringe.shape== syringe1.shape && syringe.width.equals(syringe1.width) && syringe.range== syringe1.range) {
+                    System.out.println("Both syringe are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

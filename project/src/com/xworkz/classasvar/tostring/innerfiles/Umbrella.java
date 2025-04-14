@@ -19,4 +19,20 @@ public class Umbrella {
     public int hashCode(){
         return 9757;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Umbrella) {
+                System.out.println("Ref is umbrella,it will compare....");
+                Umbrella umbrella = this;
+                Umbrella umbrella1 = (Umbrella) obj;
+                if (umbrella.height== umbrella1.height && umbrella.duration.equals(umbrella1.duration) && umbrella.size== umbrella1.size) {
+                    System.out.println("Both umbrella are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

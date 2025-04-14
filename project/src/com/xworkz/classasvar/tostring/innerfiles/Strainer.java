@@ -19,4 +19,20 @@ public class Strainer {
     public int hashCode(){
         return 60507;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Refer is not null");
+            if (obj instanceof Strainer) {
+                System.out.println("Ref is strainer,it will compare....");
+                Strainer strainer = this;
+                Strainer strainer1 = (Strainer) obj;
+                if (strainer.material.equals(strainer1.material) && strainer.thickness== strainer1.thickness && strainer.capacity== strainer1.capacity) {
+                    System.out.println("Both strainer are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
