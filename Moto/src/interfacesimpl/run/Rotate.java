@@ -18,6 +18,11 @@ public class Rotate implements AC, Airoplain, Alien, Attendance, Bag {
     }
 
     @Override
+    public void costly() {
+        AC.super.costly();
+    }
+
+    @Override
     public void fly() {
         System.out.println("Rotate: Airoplain is flying.");
     }

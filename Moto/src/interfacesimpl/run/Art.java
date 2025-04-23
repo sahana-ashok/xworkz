@@ -1,6 +1,6 @@
 package interfacesimpl.run;
 
-public class Art implements AC, Airoplain, Alien, Attendance, Carrot {
+public abstract class Art implements AC, Airoplain, Alien, Attendance, Carrot {
 
     @Override
     public void coolRoom() {
@@ -15,6 +15,11 @@ public class Art implements AC, Airoplain, Alien, Attendance, Carrot {
     @Override
     public void swing() {
         System.out.println("Art: The AC is swinging.");
+    }
+
+    @Override
+    public void costly() {
+        AC.super.costly();
     }
 
     @Override

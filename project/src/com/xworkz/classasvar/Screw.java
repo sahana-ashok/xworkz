@@ -13,3 +13,14 @@ public class Screw {
         System.out.println("Screw Type: " + type + ", Length: " + length + "mm");
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+
+        // Accessing all inherited methods
+        p.eat();   // from Animal
+        p.bark();  // from Dog
+        p.weep();  // from Puppy
+    }
+}
+}
