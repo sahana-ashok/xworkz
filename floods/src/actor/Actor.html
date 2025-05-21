@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actor Form</title>
+</head>
+<body>
+<h2>Actor Details Form</h2>
+<form onsubmit="submitForm(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="lang">Language:</label><br>
+    <select id="lang" name="lang" required>
+        <option value="">--Select--</option>
+        <option value="Kannada">Kannada</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Tamil">Tamil</option>
+        <option value="English">English</option>
+    </select><br><br>
+
+    <label for="salary">Salary (in Cr):</label><br>
+    <input type="number" id="salary" name="salary" required><br><br>
+
+    <label for="blockbusters">Block Busters:</label><br>
+    <input type="text" id="blockbusters" name="blockbusters"><br><br>
+
+    <label for="flops">Flops:</label><br>
+    <input type="text" id="flops" name="flops"><br><br>
+
+    <label for="upcomingMovie">Upcoming Movie:</label><br>
+    <input type="text" id="upcomingMovie" name="upcomingMovie"><br><br>
+
+    <label for="producer">Upcoming Movie Producer:</label><br>
+    <input type="text" id="producer" name="producer"><br><br>
+
+    <label for="director">Upcoming Movie Director:</label><br>
+    <input type="text" id="director" name="director"><br><br>
+
+    <label for="budget">Upcoming Movie Budget (in Cr):</label><br>
+    <input type="number" id="budget" name="budget"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="responseMsg" style="color:green; font-weight:bold;"></p>
+
+<script>
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById("responseMsg").innerText = "Actor data submitted successfully!";
+    }
+</script>
+</body>
+</html>
