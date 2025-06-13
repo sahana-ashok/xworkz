@@ -1,4 +1,4 @@
-<form action="passport" method="post">
+<form action="pass" method="post">
     Name: <input type="text" name="applicantName" /><br/>
     Aadhar No: <input type="text" name="aadharNo" /><br/>
     Address: <input type="text" name="address" /><br/>
